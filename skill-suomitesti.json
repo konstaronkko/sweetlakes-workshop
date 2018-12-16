@@ -1,0 +1,440 @@
+{
+  "name": "suomitesti",
+  "intents": [
+    {
+      "intent": "visualRecognition",
+      "examples": [
+        {
+          "text": "Osaatko nähdä?"
+        },
+        {
+          "text": "Voitko tulkita kuvan?"
+        },
+        {
+          "text": "Käynnistä kuvantunnistus"
+        },
+        {
+          "text": "Kuvantunnistus"
+        },
+        {
+          "text": "Tunnista kuva"
+        },
+        {
+          "text": "Voitko tunnistaa kuvan?"
+        },
+        {
+          "text": "Osaatko tulkita kuvan?"
+        },
+        {
+          "text": "Osaatko tulkita kuvia?"
+        }
+      ],
+      "description": "Kuvantunnistuksen triggeri"
+    },
+    {
+      "intent": "weatherQuestion",
+      "examples": [
+        {
+          "text": "Onko pilvistä?"
+        },
+        {
+          "text": "Millainen sää tänään on?"
+        },
+        {
+          "text": "Sataako ulkona?"
+        },
+        {
+          "text": "Tarvitsenko sateenvarjon?"
+        },
+        {
+          "text": "Paistaako aurinko?"
+        },
+        {
+          "text": "Montako astetta on ulkona?"
+        },
+        {
+          "text": "Sää"
+        },
+        {
+          "text": "Säätiedot"
+        },
+        {
+          "text": "saisinko sään?"
+        },
+        {
+          "text": "onko pakkasta?"
+        }
+      ],
+      "description": "Sääkysymyksiä"
+    },
+    {
+      "intent": "hello",
+      "examples": [
+        {
+          "text": "Hei"
+        },
+        {
+          "text": "Päivää"
+        },
+        {
+          "text": "Terve"
+        },
+        {
+          "text": "Moro"
+        },
+        {
+          "text": "Moi"
+        },
+        {
+          "text": "Huomenta"
+        },
+        {
+          "text": "Hyvää huomenta"
+        },
+        {
+          "text": "Hyvää päivää"
+        },
+        {
+          "text": "Iltaa"
+        },
+        {
+          "text": "Hyvää iltaa"
+        }
+      ],
+      "description": "Ystävällisiä aloituksia"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "cities",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Jämsä",
+          "synonyms": [
+            "Jämsän",
+            "Jämsästä",
+            "Jämsään",
+            "Jämsässä"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Helsinki",
+          "synonyms": [
+            "Helsingin",
+            "Helsingistä",
+            "Helsinkiin",
+            "Helsingissä"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Jyväskylä",
+          "synonyms": [
+            "Jyväskylän",
+            "Jyväskylästä",
+            "Jyväskylään",
+            "Jyväskylässä"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Oulu",
+          "synonyms": [
+            "Oulun",
+            "Oulusta",
+            "Ouluun",
+            "Oulussa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Turku",
+          "synonyms": [
+            "Turun",
+            "Turusta",
+            "Turkuun",
+            "Turussa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rauma",
+          "synonyms": [
+            "Rauman",
+            "Raumalta",
+            "Raumaan",
+            "Raumassa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tampere",
+          "synonyms": [
+            "Tampereen",
+            "Tampereelta",
+            "Tampereelle",
+            "Tampereella"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Espoo",
+          "synonyms": [
+            "Espoon",
+            "Espoosta",
+            "Espooseen",
+            "Espoossa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vantaa",
+          "synonyms": [
+            "Vantaan",
+            "Vantaalta",
+            "Vantaahan",
+            "Vantaalla"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Seinäjoki",
+          "synonyms": [
+            "Seinäjoen",
+            "Seinäjoelta",
+            "Seinäjoelle",
+            "Seinäjoella"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vaasa",
+          "synonyms": [
+            "Vaasasta",
+            "Vaasaan",
+            "Vaasan",
+            "Vaasassa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pori",
+          "synonyms": [
+            "Porin",
+            "Porista",
+            "Poriin",
+            "Porissa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Lahti",
+          "synonyms": [
+            "Lahden",
+            "Lahdesta",
+            "Lahteen",
+            "Lahdessa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Salo",
+          "synonyms": [
+            "Salon",
+            "Salosta",
+            "Saloon",
+            "Salossa"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-location",
+      "values": []
+    }
+  ],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Lähetän tulkittavaksi..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1544986876503",
+      "context": {
+        "action": "visual"
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "node_2_1544986941667"
+    },
+    {
+      "type": "standard",
+      "title": "Kaupunki",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Noudetaan säätietoja..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1544713153444",
+      "context": {
+        "city": "@sys-location",
+        "action": "weather"
+      },
+      "metadata": {},
+      "conditions": "@sys-location",
+      "dialog_node": "node_2_1544713196611"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hups, nyt meni ohi. Voitko muotoilla uudestaan? Voit kysyä minulta vaikka säätietoja maailmalta."
+              },
+              {
+                "text": "Pahoittelen, en ymmärtänyt. Selvennätkö hieman? Voit kysyä minulta mm. säästä."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_1_1544986876503"
+    },
+    {
+      "type": "standard",
+      "title": "Sääkysymys",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Voin hakea sinulle säätiedot. Mistä kaupungista haluat tiedot?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#weatherQuestion",
+      "dialog_node": "node_1_1544713153444",
+      "previous_sibling": "node_2_1544712822715"
+    },
+    {
+      "type": "standard",
+      "title": "Tervehdys",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hei, olen testikäyttöön tehty chatbot. Toimin Watson Assistantilla. Osaan vastata sääkysymyksiin, ja toivottavasti tulevaisuudessa tulkita myös kuvia."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#hello",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1544712822715",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tottakai, mutta vain netistä tällä hetkellä. Syötä kuvan sijainti URLina (Http://-muotoisena), niin lähetän sen tulkittavaksi"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#visualRecognition",
+      "dialog_node": "node_1_1544986876503",
+      "previous_sibling": "node_1_1544713153444"
+    },
+    {
+      "type": "standard",
+      "title": "Aloitus",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hei, kuinka voin auttaa?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "workspace_id": "640881c3-5d52-4b5f-9cb1-56858bda7d12",
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    }
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}

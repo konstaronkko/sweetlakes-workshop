@@ -1,0 +1,28 @@
+Terve,hello
+Hyvää iltaa,hello
+Päivää,hello
+Iltaa,hello
+Hyvää päivää,hello
+Hyvää huomenta,hello
+Hei,hello
+Huomenta,hello
+Moi,hello
+Moro,hello
+Osaatko nähdä?,visualRecognition
+Osaatko tulkita kuvia?,visualRecognition
+Osaatko tulkita kuvan?,visualRecognition
+Voitko tunnistaa kuvan?,visualRecognition
+Tunnista kuva,visualRecognition
+Kuvantunnistus,visualRecognition
+Käynnistä kuvantunnistus,visualRecognition
+Voitko tulkita kuvan?,visualRecognition
+Montako astetta on ulkona?,weatherQuestion
+Millainen sää tänään on?,weatherQuestion
+Sataako ulkona?,weatherQuestion
+Tarvitsenko sateenvarjon?,weatherQuestion
+Paistaako aurinko?,weatherQuestion
+Sää,weatherQuestion
+Säätiedot,weatherQuestion
+saisinko sään?,weatherQuestion
+onko pakkasta?,weatherQuestion
+Onko pilvistä?,weatherQuestion
